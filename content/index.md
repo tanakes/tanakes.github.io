@@ -1,13 +1,14 @@
 ---
+---
 title: Home
 ---
+MAT251 Final Prep
 
-# Welcome
+## Navigation
 
-This is my Quartz website.
+To browse all notes, open the **Explorer** in the left sidebar.
 
-## Notes
-
-- [[Chapter 4. Continuous Random Variables and Their Probability Distributions]]
+That’s where all chapters and files are organized.
+---
 
 
