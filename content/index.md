@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# MAT251 final prep
+# 
 
 ## Navigation
 
