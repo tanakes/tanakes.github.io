@@ -182,12 +182,12 @@ SELECT balance → 200
 
 # 📊 4. Quick Comparison Table
 
-|Isolation Level|Dirty Read|Non-repeatable|Phantom|
-|---|---|---|---|
-|Read Uncommitted|✅ Yes|✅ Yes|✅ Yes|
-|Read Committed|❌ No|✅ Yes|✅ Yes|
-|Repeatable Read|❌ No|❌ No|✅ Yes|
-|Serializable|❌ No|❌ No|❌ No|
+| Isolation Level  | Dirty Read | Non-repeatable read | Phantom read | Lost Update (PostgreSQL)         |
+| ---------------- | ---------- | ------------------- | ------------ | -------------------------------- |
+| Read Uncommitted | ✅ Yes      | ✅ Yes               | ✅ Yes        | ✅ Yes (not supported in PG)      |
+| Read Committed   | ❌ No       | ✅ Yes               | ✅ Yes        | ✅ Yes (without atomic ops)       |
+| Repeatable Read  | ❌ No       | ❌ No                | ✅ Yes        | ❌ No (serialization failure)     |
+| Serializable     | ❌ No       | ❌ No                | ❌ No         | ❌ No                             |
 
 ---
 
