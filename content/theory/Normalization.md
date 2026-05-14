@@ -1,7 +1,3 @@
-Absolutely, I’ll replace the airline example with a much simpler everyday one: **tennis players, tournaments, and personal coaches**. The rest of the 1NF, 2NF, and 3NF examples stay the same (they were logical), but I’ll include them again for a complete, consistent explanation.
-
----
-
 ## 1NF – First Normal Form
 **Rule:** A table is in 1NF if every column contains only atomic (indivisible) values and there are no repeating groups.
 

@@ -204,6 +204,3 @@ Edges:
 
 ---
 
-If you want next, I can:
-
-- or

@@ -212,4 +212,3 @@ SELECT balance → 200
 
 ---
 
-If you want, I can show **real SQL examples with two transactions step-by-step** (like exam style).
