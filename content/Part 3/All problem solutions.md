@@ -216,8 +216,6 @@ COMMIT;
 
 -- DENSE_RANK().
 
-  
-
 WITH ranked_salaries AS (
 
     SELECT
@@ -275,11 +273,7 @@ SELECT * FROM hierarchy;
 
   
 
--- 11. Find the IDs of students who have enrolled in ALL courses offered by the 'Computer
-
--- Science' department.
-
-  
+-- 11. Find the IDs of students who have enrolled in ALL courses offered by the 'Computer Science' department.
 
 SELECT t.ID
 
@@ -302,8 +296,6 @@ HAVING COUNT(DISTINCT t.course_id) = (
 
 -- 12. Find product IDs that were sold in 'January' but NOT in 'February'.
 
-  
-
 SELECT DISTINCT product_id FROM sales WHERE month = 'January'
 
 AND product_id NOT IN (SELECT product_id FROM sales WHERE month = 'February');
@@ -314,12 +306,7 @@ AND product_id NOT IN (SELECT product_id FROM sales WHERE month = 'February');
 -- 13. Given a table 'Post' with a column 'tags' (text array), find all posts that contain the
 
 -- tags 'sql' and 'database'.
-
-  
-
-SELECT *
-
-FROM Post
+SELECT * FROM Post
 
 WHERE ARRAY['sql', 'database'] <@ tags;
 
@@ -337,15 +324,12 @@ WHERE data->>'active' = 'true';
   
   
 
--- 15. Find the names of employees whose salary is higher than the average salary of the
-
--- entire company.
-
-  
-
+-- 15. Find the names of employees whose salary is higher than the average salary of the entire company.
 SELECT name
 
 FROM employees
 
 WHERE salary > (SELECT AVG(salary) FROM employees);
 ```
+
+
